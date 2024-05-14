@@ -1,0 +1,345 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-image: url("img/background_header.webp");
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 3px 3px #cdcdcd;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Menu Mobile */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+#home_quiz {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+}
+
+#home {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 70%;
+    text-align: justify;
+    box-shadow: 0px 3px 3px #cdcdcd;
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 30%;
+    text-align: justify;
+    box-shadow: 0px 3px 3px #cdcdcd;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+button:hover {
+    background-color: #000000;
+}
+
+#quiz button {
+    align-self: flex-end; /* Aligne le bouton à la fin du conteneur */
+    margin-top: auto; /* Pousse le bouton vers le bas */
+    width: 100%;
+}
+
+#quiz h2 {
+    color: #fff;
+}
+
+
+/* Container for tips */
+.tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+/* Each tip */
+.tip {
+    background-color: #e7ffe7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    flex: 0 1 calc(25% - 20px); /* 4 conseils par ligne */
+    box-sizing: border-box;
+    transition: transform .1s;
+    box-shadow: 0px 3px 3px #cdcdcd;
+}
+
+.tip:hover {
+    -ms-transform: scale(1.03);
+    /* IE 9 */
+    -webkit-transform: scale(1.03);
+    /* Safari 3-8 */
+    transform: scale(1.03);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+}
+
+#about-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+    text-align: justify;
+}
+
+#about {
+    width: 65%;
+}
+
+#contact {
+    width: 35%;
+}
+
+#blog {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Container for blog posts */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Each blog post */
+.blog-post {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    flex: 0 1 calc(25% - 20px);
+    /* 4 articles par ligne */
+    box-sizing: border-box;
+    transition: transform .1s;
+    box-shadow: 0px 3px 3px #cdcdcd;
+}
+
+.blog-post:hover {
+    -ms-transform: scale(1.03);
+    /* IE 9 */
+    -webkit-transform: scale(1.03);
+    /* Safari 3-8 */
+    transform: scale(1.03);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.blog-post h3 {
+    margin-top: 0;
+}
+
+.blog-post a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Styles pour le formulaire de contact */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 3px #cdcdcd;
+}
+
+#contactForm label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+#contactForm input, 
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#contactForm input:focus, 
+#contactForm textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+#contactForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#contactForm button:hover {
+    background-color: #317033;
+}
+
+#mission_container {
+    background-color: #cdcdcd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    box-shadow: 0px 3px 3px #cdcdcd;
+}
+
+#mission_container .info {
+    padding-left: 10px;
+}
+
+@media (max-width: 1200px) {
+    .blog-post {
+        flex: 0 1 calc(33.33% - 20px);
+        /* 3 articles par ligne */
+    }
+    .tip {
+        flex: 0 1 calc(33.33% - 20px); /* 3 conseils par ligne */
+    }
+    #home_quiz, #about-contact{
+        flex-direction: column; /* Passer les sections l'une au-dessus de l'autre */
+    }
+
+    #home, #quiz {
+        width: 100%; /* Prendre toute la largeur */
+    }
+    #about, #contact {
+        width: 90%; /* Prendre toute la largeur */
+    }
+    nav ul {
+        flex-direction: column;
+        display: none; /* Cacher le menu par défaut */
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        background-color: white;
+        border-top: 1px solid #ddd;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block; /* Montrer l'icône de menu */
+        background-color: #fff;
+        width: 50px;
+        border-radius: 3px;
+        margin: auto;
+    }
+
+    .menu-open {
+        display: flex; /* Afficher le menu quand il est ouvert */
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .blog-post {
+        flex: 0 1 calc(50% - 20px);
+        /* 2 articles par ligne */
+    }
+    .tip {
+        flex: 0 1 calc(50% - 20px); /* 2 conseils par ligne */
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-post {
+        flex: 0 1 calc(100% - 20px);
+        /* 1 article par ligne */
+    }
+    .tip {
+        flex: 0 1 calc(100% - 20px); /* 1 conseil par ligne */
+    }
+}

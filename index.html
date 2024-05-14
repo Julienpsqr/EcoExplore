@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoExplore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>EcoExplore</h1>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul id="nav-menu">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#tips">Conseils</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home_quiz">
+        <section id="home">
+            <h2>Bienvenue sur EcoExplore</h2>
+            <p>Nous sommes ravis de vous accueillir sur notre plateforme dédiée à la promotion d'un mode de vie
+                écologique et durable. Chez EcoExplore, nous croyons que chaque petit geste compte et que,
+                collectivement, nous pouvons faire une grande différence pour notre planète.</p>
+                <p>Découvrez des conseils
+                pratiques, des articles inspirants et des ressources éducatives pour adopter des habitudes respectueuses
+                de l'environnement. Que vous soyez déjà engagé dans une démarche écologique ou que vous commenciez juste
+                à explorer cette voie, nous avons des informations et des outils pour vous aider à vivre de manière plus
+                durable et à contribuer à un avenir meilleur.</p>
+                <p>Ensemble, faisons des choix éclairés pour protéger notre
+                environnement et inspirer les autres à faire de même. Explorez, apprenez et agissez avec EcoExplore !
+            </p>
+        </section>
+
+        <section id="quiz">
+            <h2>Quel est votre score d'écologie ?</h2>
+            <p>Participez à notre quiz rapide pour évaluer vos habitudes écologiques. Répondez à quelques questions simples et obtenez un score personnalisé qui reflète votre impact environnemental. Êtes-vous prêt à relever le défi ?</p>
+            <button onclick="showQuiz()">Commencer le quiz écologique &#x1F680;</button>
+        </section>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-container">
+            <div class="blog-post">
+                <img src="img/vie-durable.webp" alt="Illustration vie durable">
+                <h3>Pourquoi adopter une vie durable?</h3>
+                <p>Découvrez des pratiques simples pour rendre votre vie plus durable...</p>
+                <a href="blog1.html">Lire plus</a>
+            </div>
+            <div class="blog-post">
+                <img src="img/tri_des_dechets.webp" alt="Illustration vie durable">
+                <h3>Réduire les déchets</h3>
+                <p>Apprenez à réduire les déchets dans votre quotidien...</p>
+                <a href="blog2.html">Lire plus</a>
+            </div>
+            <div class="blog-post">
+                <img src="img/energie_renouvelable.webp" alt="Illustration vie durable">
+                <h3>Énergie renouvelable</h3>
+                <p>Les avantages de l'énergie solaire et éolienne...</p>
+                <a href="blog3.html">Lire plus</a>
+            </div>
+            <div class="blog-post">
+                <img src="img/consommation_responsable.webp" alt="Illustration vie durable">
+                <h3>Consommation responsable</h3>
+                <p>Comment faire des choix de consommation plus responsables...</p>
+                <a href="blog4.html">Lire plus</a>
+            </div>
+            <!-- Ajoute plus d'articles si nécessaire -->
+        </div>
+    </section>
+
+    <section id="tips">
+        <h2>Conseils pour une vie durable</h2>
+        <div class="tips-container">
+            <div class="tip">
+                <h3>Réduire, Réutiliser, Recycler</h3>
+                <p>Minimisez vos déchets en suivant les trois R. Réduisez votre consommation, réutilisez ce que vous
+                    pouvez
+                    et recyclez les matériaux pour donner une seconde vie aux objets.</p>
+            </div>
+            <div class="tip">
+                <h3>Consommer local</h3>
+                <p>Achetez des produits locaux pour réduire votre empreinte carbone et soutenir les producteurs de votre
+                    région. Les produits locaux nécessitent moins de transport et sont souvent plus frais et meilleurs
+                    pour
+                    l'environnement.</p>
+            </div>
+            <div class="tip">
+                <h3>Économie d'énergie</h3>
+                <p>Utilisez des ampoules LED, éteignez les appareils électriques lorsque vous ne les utilisez pas, et
+                    privilégiez les appareils électroménagers à haute efficacité énergétique pour réduire votre
+                    consommation
+                    d'énergie.</p>
+            </div>
+            <div class="tip">
+                <h3>Transports durables</h3>
+                <p>Privilégiez les modes de transport écologiques comme le vélo, la marche ou les transports en commun.
+                    Si
+                    possible, optez pour le covoiturage ou les véhicules électriques.</p>
+            </div>
+        </div>
+        <!-- Plus de conseils peuvent être ajoutés ici -->
+    </section>
+
+    <section id="mission">
+        <h2>Notre mission</h2>
+        <section id="mission_container">
+            <p>Chez EcoExplore, nous sommes convaincus que le changement commence par l'éducation et la prise de conscience. Nous invitons chacun à explorer nos ressources, à apprendre et à s'engager activement dans la protection de notre environnement. Ensemble, nous pouvons créer un avenir plus vert et plus durable.</p>
+
+            <h3 class="info">Informer</h3>
+            <p class="info">Nous offrons une vaste bibliothèque d'articles, de guides et de ressources sur divers sujets liés à l'écologie et à la durabilité. Que ce soit pour comprendre les bases du recyclage, les avantages des énergies renouvelables, ou les moyens de réduire notre empreinte carbone, EcoExplore fournit des informations fiables et accessibles.</p>
+            <h3 class="info">Éduquer</h3>
+            <p class="info">Par le biais de cours interactifs, de quiz engageants et de vidéos éducatives, nous visons à approfondir la compréhension des enjeux environnementaux et à encourager des habitudes de vie durables. Nos contenus sont conçus pour être à la fois instructifs et motivants, permettant à chacun de se sentir équipé pour faire des choix écologiques éclairés.</p>
+            <h3 class="info">Inspirer</h3>
+            <p class="info">Nous partageons des histoires inspirantes de personnes et de communautés qui font une différence, des innovations écologiques et des initiatives locales et mondiales. En mettant en lumière ces exemples positifs, nous espérons motiver davantage de personnes à agir pour le bien de notre planète.</p>
+        </section>
+        </section>
+
+    <section id="about-contact">
+        <section id="about">
+            <h2>À propos</h2>
+            <p>EcoExplore est bien plus qu'une simple plateforme éducative ; c'est un mouvement dédié à la sensibilisation et à la promotion de pratiques écologiques durables. Conscients des défis environnementaux auxquels notre planète est confrontée, nous avons pour mission de fournir des informations claires, des ressources pratiques et des outils éducatifs pour aider chacun à adopter un mode de vie plus respectueux de l'environnement.</p>
+            <p>Notre objectif est d'informer, d'éduquer et d'inspirer les individus de tous âges et de tous horizons à prendre des mesures concrètes en faveur de la durabilité. Nous croyons fermement que chaque petit geste compte et que, collectivement, nous pouvons avoir un impact significatif et positif sur notre planète.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </section>
+
+    <section id="quiz" style="display: none;">
+        <h2>Quiz écologique</h2>
+        <p id="quizQuestion">Question ici</p>
+        <button onclick="nextQuestion()">Suivant</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 EcoExplore. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
